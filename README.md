@@ -1,24 +1,39 @@
 # TaskFlow
 Smooth and efficient task management.
 
+## Tech Stack
+* **Frontend:** HTML5, CSS3 (Modern Dark Glassmorphism UI)
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB (Mongoose)
+* **Authentication:** JWT, Bcrypt
+
+## Project Structure
+```text
+TaskFlow/
+├── frontend/
+│   └── index.html
+└── backend/
+    └── src/
+        ├── config/
+        ├── controllers/
+        ├── middlewares/
+        ├── models/
+        ├── routes/
+        ├── utils/
+        ├── app.js
+        └── server.js
+```
+
 ## Setup Instructions
 
-1. **Install dependencies:**
-   `cd backend && npm install`
+* **Install dependencies:** 
+  ```bash
+  cd backend && npm install
+  ```
 
-2. **Environment Variables:**
-   Create a `.env` file in the `backend` directory with:
-   ```env
-   PORT=5000
-   MONGO_URI=<your-mongodb-uri>
-   JWT_SECRET=<your-secret-key>
-   ```
-
-3. **Start the server:**
-   `npm run dev`
-
-## API Endpoints
-- `POST /api/auth/register` - Register a user
-- `POST /api/auth/login` - Login a user
-- `GET /api/tasks` - Get user tasks (Protected)
-- `POST /api/tasks` - Create a task (Protected)
+* **Environment Variables:** Create a `.env` file in the `backend` directory with:
+  ```env
+  PORT=5000
+  MONGO_URI=<your-mongodb-uri>
+  JWT_SECRET=<your-secret-key>
+  ```
